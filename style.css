@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Фон */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #002fff, #8000ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Белая карточка для счетчика */
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    min-width: 450px;
+}
+
+/* Заголовок */
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+/* Окошко с числом */
+.number {
+    font-size: 72px;
+    font-weight: bold;
+    padding: 40px;
+    margin-bottom: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #f44336;
+    transition: background-color 0.2s;
+}
+
+/* Контейнер для кнопок */
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* Стили кнопок */
+button {
+    font-size: 48px;
+    font-weight: bold;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+/* Кнопка плюс */
+.btn-plus {
+    background: linear-gradient(135deg, #26ff00, #006928);
+    color: white;
+}
+
+/* Кнопка минус */
+.btn-minus {
+    background: linear-gradient(135deg, #ff0000, #ff7272);
+    color: white;
+}
+
+/* Эффект при наведении на активную кнопку */
+button:hover:not(:disabled) {
+    transform: scale(1.05);
+}
+
+/* Неактивная кнопка */
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Дополнительное окно для сообщения */
+.message {
+    background: #f0f0f0;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+    transition: all 0.2s;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
